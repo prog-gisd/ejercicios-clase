@@ -1,3 +1,4 @@
+# Diccionario de supermercados keys=nombres y values = diccionario de producto/precio
 supermercados = {
     "mercadona": {
         "azúcar": 2.0,
