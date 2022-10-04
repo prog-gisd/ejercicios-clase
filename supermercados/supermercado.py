@@ -73,7 +73,7 @@ supermercados = {
     }
 }
 
-
+# Inicio del programa principal
 supermercado_objetivo = input("¿Donde quieres comprar hoy? En el:\n")
 
 listado_precios = None
