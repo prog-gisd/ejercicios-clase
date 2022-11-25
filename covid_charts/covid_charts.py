@@ -292,7 +292,7 @@ if __name__ == '__main__':
     plt.show()
     
     for country in selected_countries:
-        # Incidencia acumulada a 14 días por fecha
+        # Incidencia acumulada a 7 días por fecha
         daily_acummulated_incidence: dict[str, int] = country.get_ai(size=7)
         plt.plot(daily_acummulated_incidence.keys(), daily_acummulated_incidence.values(), label=country.name)
     plt.xlabel("Fecha")
