@@ -18,3 +18,5 @@ Para ejecutarlo correctamente, seguid las siguientes instrucciones:
 Recordad que hay que instalar los módulos requests y matplotlib tal como se indica en los comentarios que se encuentra dentro del código.
 
 El único fichero de datos que se incluye es el "population.json" con las poblaciones de algunos países. Todos los demás se generan/descargan ejecutando el código.
+
+Por último, recordad crear una carpeta logs dentro de la carpeta "covid_charts" para que se puedan escribir los logs en ese directorio.
