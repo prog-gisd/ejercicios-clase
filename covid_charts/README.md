@@ -15,6 +15,7 @@ Para ejecutarlo correctamente, seguid las siguientes instrucciones:
 1. covid_sources.py para generar el fichero "sources_url.json"
 2. covid_data.py para descargar los ficheros csv
 3. covid_charts.py para cargar dichos ficheros y visualizar las gráficas.
+4. covid_comparison.py para cargar tanto los datos de casos confirmados como de fallecidos y visualizar la comparativa. Muy interesante para observar el efecto de la vacunación en la pandemia.
 
 Recordad que hay que instalar los módulos requests y matplotlib tal como se indica en los comentarios que se encuentra dentro del código.
 
