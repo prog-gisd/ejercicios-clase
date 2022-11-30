@@ -13,7 +13,7 @@ logging.basicConfig(
         mode='a',
         encoding='utf-8')],
     format='%(asctime)s - %(name)s - %(levelname)s -> %(message)s',
-    level=logging.DEBUG,
+    level=logging.INFO,
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 # Obteniendo un Logger concreto para este proceso
@@ -49,7 +49,10 @@ class Country:
         valores = datos[4:]
         self.datos: dict[str, int] = {}
         for i in range(len(fechas)):
-            self.datos[fechas[i]] = int(valores[i])
+            fecha_anglo: str = fechas[i]
+            partes: list[str] = fecha_anglo.split('/')
+            fecha_esp: str = partes[1]+'/'+partes[0]+'/'+partes[2]
+            self.datos[fecha_esp] = int(valores[i])
         
         # Se definen otros dos atributos que 
         # solo se inicializarán si se necesitan
@@ -146,7 +149,7 @@ class Country:
                 extra_msg='No se puede calcular la IA sin la población.')
         
         ia_country = {}
-        diarios = self.casos_diarios
+        diarios = self.casos_diarios if self.casos_diarios != None else self.get_daily_cases()
         fechas = list(diarios.keys())
         datos = list(diarios.values())
         

@@ -15,7 +15,7 @@ logging.basicConfig(
         mode='a',
         encoding='utf-8')],
     format='%(asctime)s - %(name)s - %(levelname)s -> %(message)s',
-    level=logging.DEBUG,
+    level=logging.INFO,
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 # Obteniendo un Logger concreto para este proceso
