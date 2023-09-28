@@ -53,7 +53,8 @@ supermercados = {
         "carne": 18.5,
         "pescado": 17.3,
         "huevos": 4.3,
-        "cereales": 5.1
+        "cereales": 5.1,
+        "pan": 0.89
     },
     "corte ingés": {
         "azúcar": 2.0,
