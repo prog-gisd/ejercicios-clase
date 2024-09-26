@@ -115,7 +115,7 @@ def imprimir_ticket(cesta: list[str]) -> None:
 
         print(unidades, "x", alimento, "(", precio_unitario, "€) ->", precio, "€")
 
-    print("TOTAL:", total_a_pagar, "€")
+    print("TOTAL:", round(total_a_pagar,2), "€")
 
 def get_cesta_con_asistente(listado_precios: dict[str, float]) -> list[str]:
     cesta = []
