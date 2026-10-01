@@ -63,7 +63,7 @@ print("="*20)
 fin: bool = False
 while not fin:
     target: str = input("Dime de qué alumno quieres conocer la calificación: ")
-    if not target: # target == "" o len(target) == 0
+    if not target: # t  arget == "" o len(target) == 0
         fin = True
     print("Calificación de", target, "->", alumnos.get(target, "NP"))
 else:
